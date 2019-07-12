@@ -16,3 +16,5 @@ K911: Sit. Stay. Spit that out!
  
  # External API's
   *Yelp Fusion
+
+![BlueDog](https://github.com/JGD625/K911/blob/master/src/Images/BlueDog.png)

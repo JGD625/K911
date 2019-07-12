@@ -1,0 +1,17 @@
+.REDALERT {
+    color:red;
+    font-style: bolder;
+    font-size: 30px;
+}
+
+.Plant-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 16.66rem;
+  background: #ffffff;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}

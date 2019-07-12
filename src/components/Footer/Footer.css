@@ -1,0 +1,22 @@
+.footer {
+ width: 100%;
+ background: darkgray;
+ color: white;
+ bottom: 0px;
+ text-align: center;
+ position: fixed;
+ bottom: 0px;
+}
+
+.footer-flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+}
+
+.disclaimer-modal {
+    text-align: left;
+}

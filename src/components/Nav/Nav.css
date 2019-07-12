@@ -1,0 +1,11 @@
+.nav-list {
+    list-style-type: none;
+    position: fixed;
+    right: 20px;
+    top: 40px;
+}
+
+.nav-list li {
+    display: inline;
+    padding-left: 20px;
+}

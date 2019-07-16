@@ -22,6 +22,7 @@ function App() {
     <Route path='/medicine' component={Medicine} />
     <Route path='/firstaid' component={FirstAid} />
     <Route path='/vets' component={YelpSearch} />
+    
     <Route component={NotFoundPage} />
     </Switch>
     </main>

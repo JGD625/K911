@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom'
 import PlantListPage from './PlantsListPage'
 import Plant from './Plant'
 import './Plants.css';
+import AllPlantsListPage from './AllPlantsListPage'
 
 
 export default class Plants extends Component {
@@ -16,12 +17,13 @@ export default class Plants extends Component {
         <div>
         <Route
             exact path='/plants'
-            component={PlantListPage}
+            component={AllPlantsListPage}
           />
           <Route
             path='/plants/:plantId'
             component={Plant}
           />
+          
         </div>
         
       </div>

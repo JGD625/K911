@@ -2,7 +2,7 @@ import React from 'react'
 import PLANTS from './plantstore'
 import './PlantsListPage.css'
 
-export default function PoemListPage() {
+export default function PlantListPage() {
   return (
     <>
       <p>Choose a plant from the list below.</p>

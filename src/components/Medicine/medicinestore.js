@@ -3,6 +3,8 @@ export default [
       id: 'acetaminophen',
       name: 'Acetaminophen, AKA Tylenol',
       type: 'medicine',
+      toxic: true,
+      nontoxic: false,
       toxicity: 'Toxic',
       toxic_principles:'',
       symptom: [
@@ -13,6 +15,8 @@ export default [
       id: 'diphenhydramine',
       name: 'Diphenhydramine, AKA Benadryl',
       type: 'medicine',
+      toxic: false,
+      nontoxic: true,
       toxicity: 'Non-Toxic',
       toxic_principles:'',
       symptom: [
@@ -23,6 +27,8 @@ export default [
       id: 'cough_drops',
       name: 'Cough Drops',
       type: 'medicine',
+      toxic: true,
+      nontoxic: false,
       toxicity: 'Potentially Toxic',
       toxic_principles:'Xylitol, Benazocaine',
       symptom: [
@@ -33,6 +39,8 @@ export default [
       id: 'famotidine',
       name: 'Famotidine, AKA Pepcid AC',
       type: 'medicine',
+      toxic: false,
+      nontoxic: true,
       toxicity: 'Non-Toxic',
       toxic_principles:'',
       symptom: [
@@ -43,6 +51,8 @@ export default [
       id: 'efudex',
       name: '5-fluorouracil, AKA Efudex',
       type: 'medicine',
+      toxic: true,
+      nontoxic: false,
       toxicity: 'EXTREMELY Toxic',
       toxic_principles:'',
       symptom: [

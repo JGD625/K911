@@ -3,6 +3,7 @@ export default  [
     id: 'aloe',
     name: 'Aloe vera',
     toxicity: 'Toxic',
+    toxic: true,
     toxic_principles:'Saponins, anthraquinones',
     symptom: [
       'Vomiting, lethargy, diarrhea.'
@@ -13,6 +14,7 @@ export default  [
     name: 'American Holly',
     type: 'plant',
     toxicity: 'Toxic',
+    toxic: true,
     toxic_principles:'Saponins',
     symptom: [
       'Vomiting, diarrhea and depression.'
@@ -23,6 +25,7 @@ export default  [
     name: 'Angelica Tree',
     type: 'plant',
     toxicity: 'Toxic',
+    toxic: true,
     toxic_principles:'Araliin',
     symptom: [
       'Skin and oral irritation, hypersalivation, vomiting, diarrhea'
@@ -33,6 +36,7 @@ export default  [
     name: '',
     type: 'plant',
     toxicity: 'Toxic',
+    toxic: true,
     toxic_principles:'',
     symptom: [
       ''
@@ -43,6 +47,7 @@ export default  [
     name: 'Begonia',
     type: 'plant',
     toxicity: 'Toxic',
+    toxic: true,
     toxic_principles:'Soluble calcium oxalates',
     symptom: [
       'Vomiting, salivation. Most toxic part is underground.'
@@ -53,6 +58,7 @@ export default  [
     name: 'Bird of Paradise',
     type: 'plant',
     toxicity: 'Toxic',
+    toxic: true,
     toxic_principles:'GI irritants, possibly hydrocyanic acid',
     symptom: [
       'Oral irritation, intense burning and irritation of mouth, tongue and lips, excessive drooling, vomiting, diarrhea, difficulty swallowing and incoordination is possible.'
@@ -63,6 +69,7 @@ export default  [
     name: 'Calla Lily',
     type: 'plant',
     toxicity: 'Toxic',
+    toxic: true,
     toxic_principles:'Insoluble calcium oxalates',
     symptom: [
       'Oral irritation, intense burning and irritation of mouth, tongue and lips, excessive drooling, vomiting, difficulty swallowing.'
@@ -73,6 +80,7 @@ export default  [
     name: 'Christmas Rose, Lenten Rose',
     type: 'plant',
     toxicity: 'Toxic',
+    toxic: true,
     toxic_principles:'Cardiac glycosides, saponins, protoanemonin',
     symptom: [
       'Drooling, abdominal pain, diarrhea, colic, depression.'
@@ -83,6 +91,7 @@ export default  [
     name: 'Corn Plant, Cornstalk Plant',
     type: 'plant',
     toxicity: 'Toxic',
+    toxic: true,
     toxic_principles:'Saponins',
     symptom: [
       'Vomiting (occasionally with blood), depression, anorexia, hypersalivation.'
@@ -93,6 +102,7 @@ export default  [
     name: 'Cyclamen',
     type: 'plant',
     toxicity: 'Toxic',
+    toxic: true,
     toxic_principles:'Terpenoid saponins',
     symptom: [
       'Salivation, vomiting, diarrhea. Following large ingestions of tubers: heart rhythm abnormalities, seizures, death.'
@@ -103,6 +113,7 @@ export default  [
     name: '',
     type: 'plant',
     toxicity: 'Toxic',
+    toxic: true,
     toxic_principles:'',
     symptom: [
       ''
@@ -113,6 +124,7 @@ export default  [
     name: 'Dahlia',
     type: 'plant',
     toxicity: 'Toxic',
+    toxic: true,
     toxic_principles:'Unknown',
     symptom: [
       'Mild gastrointestinal signs, mild dermatitis.'
@@ -123,6 +135,7 @@ export default  [
     name: 'Daffodil, Jonquil',
     type: 'plant',
     toxicity: 'Toxic',
+    toxic: true,
     toxic_principles:'Lycorine and other alkaloids',
     symptom: [
       'Vomiting, salvation, diarrhea; large ingestions cause convulsions, low blood pressure, tremors and cardiac arrhythmias. Bulbs are the most poisonous part.'
@@ -133,6 +146,7 @@ export default  [
     name: 'Flamingo Flower',
     type: 'plant',
     toxicity: 'Toxic',
+    toxic: true,
     toxic_principles:'Insoluble calcium oxalates',
     symptom: [
       'Oral irritation, pain and swelling of mouth, tongue and lips, excessive drooling, vomiting, difficulty swallowing'
@@ -143,6 +157,7 @@ export default  [
     name: 'Fire Lily',
     type: 'plant',
     toxicity: 'Toxic',
+    toxic: true,
     toxic_principles:'Lycorine and other alkaloids',
     symptom: [
       'Vomiting, salvation, diarrhea; large ingestions cause convulsions, low blood pressure, tremors and cardiac arrhythmias. Bulbs are the most poisonous part.'
@@ -193,6 +208,7 @@ export default  [
     name: 'Bamboo',
     type: 'plant',
     toxicity: 'Non-Toxic',
+    nontoxic: true,
     toxic_principles:'',
     symptom: [
       ''
@@ -203,6 +219,7 @@ export default  [
     name: 'Bluebottle',
     type: 'plant',
     toxicity: 'Non-Toxic',
+    nontoxic: true,
     toxic_principles:'',
     symptom: [
       ''
@@ -213,6 +230,7 @@ export default  [
     name: 'Boston Fern',
     type: 'plant',
     toxicity: 'Non-Toxic',
+    nontoxic: true,
     toxic_principles:'',
     symptom: [
       ''
@@ -223,6 +241,7 @@ export default  [
     name: 'Burro\'s Tail',
     type: 'plant',
     toxicity: 'Non-Toxic',
+    nontoxic: true,
     toxic_principles:'',
     symptom: [
       ''
@@ -233,6 +252,7 @@ export default  [
     name: 'Camellia',
     type: 'plant',
     toxicity: 'Non-Toxic',
+    nontoxic: true,
     toxic_principles:'',
     symptom: [
       ''
@@ -243,6 +263,7 @@ export default  [
     name: 'Christmas Cactus',
     type: 'plant',
     toxicity: 'Non-Toxic',
+    nontoxic: true,
     toxic_principles:'',
     symptom: [
       ''

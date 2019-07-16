@@ -9,3 +9,7 @@
     display: inline;
     padding-left: 20px;
 }
+
+.join-modal {
+    width: 500px;
+}

@@ -4,6 +4,7 @@ export default [
       name: 'Alcohol',
       type: 'food',
       toxicity: 'Toxic',
+      toxic: true,
       toxic_principles:'',
       symptom: [
         'Vomiting, diarrhea, decreased coordination, central nervous system depression, difficulty breathing, tremors, abnormal blood acidity, coma and death.'
@@ -14,6 +15,7 @@ export default [
       name: 'Grapes',
       type: 'food',
       toxicity: 'Toxic',
+      toxic: true,
       toxic_principles:'unknown',
       symptom: [
         'Kidney failure.'
@@ -24,6 +26,7 @@ export default [
       name: 'Raisins',
       type: 'food',
       toxicity: 'Toxic',
+      toxic: true,
       toxic_principles:'unknown',
       symptom: [
         'Kidney failure.'
@@ -34,6 +37,7 @@ export default [
       name: 'Onion',
       type: 'food',
       toxicity: 'Toxic',
+      toxic: true,
       toxic_principles:'N-propyl disulfide',
       symptom: [
         'Vomiting, breakdown of red blood cells (hemolytic anemia, Heinz body anemia), blood in urine, weakness, high heart rate, panting.'
@@ -44,6 +48,7 @@ export default [
       name: 'Garlic',
       type: 'food',
       toxicity: 'Toxic',
+      toxic: true,
       toxic_principles:'N-propyl disulfide',
       symptom: [
         'Vomiting, breakdown of red blood cells (hemolytic anemia, Heinz body anemia), blood in urine, weakness, high heart rate, panting.'
@@ -54,6 +59,7 @@ export default [
       name: 'Chive',
       type: 'food',
       toxicity: 'Toxic',
+      toxic: true,
       toxic_principles:'N-propyl disulfide',
       symptom: [
         'Vomiting, breakdown of red blood cells (hemolytic anemia, Heinz body anemia), blood in urine, weakness, high heart rate, panting.'
@@ -64,6 +70,7 @@ export default [
       name: 'Oregano',
       type: 'food',
       toxicity: 'Toxic',
+      toxic: true,
       toxic_principles:'Gastrointestinal irritants',
       symptom: [
         'Mild vomiting and diarrhea'
@@ -74,6 +81,7 @@ export default [
       name: 'Chocolate',
       type: 'food',
       toxicity: 'Toxic',
+      toxic: true,
       toxic_principles:'methylxanthines',
       symptom: [
         'Vomiting and diarrhea, panting, excessive thirst and urination, hyperactivity, abnormal heart rhythm, tremors, seizures, death.'
@@ -84,6 +92,7 @@ export default [
       name: 'Coffee',
       type: 'food',
       toxicity: 'Toxic',
+      toxic: true,
       toxic_principles:'methylxanthines',
       symptom: [
         'Vomiting and diarrhea, panting, excessive thirst and urination, hyperactivity, abnormal heart rhythm, tremors, seizures, death.'
@@ -94,6 +103,7 @@ export default [
       name: 'Acorn Squash',
       type: 'food',
       toxicity: 'Non-Toxic',
+      nontoxic: true,
       toxic_principles:'',
       symptom: [
         ''
@@ -104,6 +114,7 @@ export default [
       name: 'Banana',
       type: 'food',
       toxicity: 'Non-Toxic',
+      nontoxic: true,
       toxic_principles:'',
       symptom: [
         ''
@@ -114,6 +125,7 @@ export default [
       name: 'Carob',
       type: 'food',
       toxicity: 'Non-Toxic',
+      nontoxic: true,
       toxic_principles:'',
       symptom: [
         ''
@@ -124,6 +136,7 @@ export default [
       name: 'Cilantro',
       type: 'food',
       toxicity: 'Non-Toxic',
+      nontoxic: true,
       toxic_principles:'',
       symptom: [
         ''
@@ -134,6 +147,7 @@ export default [
       name: 'Cinnamon',
       type: 'food',
       toxicity: 'Non-Toxic',
+      nontoxic: true,
       toxic_principles:'',
       symptom: [
         ''
@@ -144,6 +158,7 @@ export default [
       name: 'Cucumber',
       type: 'food',
       toxicity: 'Non-Toxic',
+      nontoxic: true,
       toxic_principles:'',
       symptom: [
         ''
@@ -154,6 +169,7 @@ export default [
       name: '',
       type: 'food',
       toxicity: 'Non-Toxic',
+      nontoxic: true,
       toxic_principles:'',
       symptom: [
         ''
@@ -164,6 +180,7 @@ export default [
       name: 'Fennel',
       type: 'food',
       toxicity: 'Non-Toxic',
+      nontoxic: true,
       toxic_principles:'',
       symptom: [
         ''
@@ -174,6 +191,7 @@ export default [
       name: 'Honeydew Melon',
       type: 'food',
       toxicity: 'Non-Toxic',
+      nontoxic: true,
       toxic_principles:'',
       symptom: [
         ''
@@ -184,6 +202,7 @@ export default [
       name: 'Pitaya, Dragonfruit',
       type: 'food',
       toxicity: 'Non-Toxic',
+      nontoxic: true,
       toxic_principles:'',
       symptom: [
         ''
@@ -194,6 +213,7 @@ export default [
       name: 'Green Beans',
       type: 'food',
       toxicity: 'Non-Toxic',
+      nontoxic: true,
       toxic_principles:'',
       symptom: [
         ''
@@ -204,6 +224,7 @@ export default [
       name: 'Sweet Potato',
       type: 'food',
       toxicity: 'Non-Toxic',
+      nontoxic: true,
       toxic_principles:'',
       symptom: [
         ''
@@ -214,6 +235,7 @@ export default [
       name: 'Strawberry',
       type: 'food',
       toxicity: 'Non-Toxic',
+      nontoxic: true,
       toxic_principles:'',
       symptom: [
         ''

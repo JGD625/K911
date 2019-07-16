@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { Route } from 'react-router-dom'
-import FoodsListPage from './FoodsListPage.js'
+import AllFoodsList from './AllFoodsList'
 import FoodItem from './FoodItem'
 import './Food.css';
 
@@ -16,7 +16,7 @@ export default class Food extends Component {
         <div>
         <Route
             exact path='/food'
-            component={FoodsListPage}
+            component={AllFoodsList}
           />
           <Route
             path='/food/:foodId'

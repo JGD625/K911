@@ -8,6 +8,7 @@ import Plants from './components/Plants/Plants'
 import Medicine from './components/Medicine/Medicine'
 import FirstAid from './components/FirstAid/FirstAid'
 import YelpSearch from './components/Yelp/YelpSearch'
+import Profile from './components/Profile/Profile'
 import NotFoundPage from './NotFoundPage'
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
     <Route path='/medicine' component={Medicine} />
     <Route path='/firstaid' component={FirstAid} />
     <Route path='/vets' component={YelpSearch} />
-    
+    <Route path='/profile' component={Profile} />
     <Route component={NotFoundPage} />
     </Switch>
     </main>

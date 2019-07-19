@@ -1,0 +1,11 @@
+.Profile-Container {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    z-index: -5;
+    background-color: #F7F4E9;
+    border: 10px solid #E40C2B;
+    border-radius: 6px;
+    overflow: auto;
+}

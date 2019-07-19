@@ -26,12 +26,9 @@ export default class Header extends Component {
           </div>
         </section>
         <section className="first-aid-link-container">
-        <Link to='/firstaid'>First Aid</Link>
-        <h2>PUPPER FIRST AID</h2>
-        </section>
-        <section className="first-aid-link-container">
-        <Link to='/vets'>Vets</Link>
+        <Link to='/vets'>
         <h2>Find a Vet for your Pet</h2>
+        </Link>
         </section>
         
 

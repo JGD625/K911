@@ -19,7 +19,7 @@ export default class Footer extends Component {
     const { open } = this.state;
     return(
       <footer className="footer">
-        <button onClick={this.onOpenModal}>DISCLAIMER</button><br/>
+        <button onClick={this.onOpenModal} className="disclaimer-button">DISCLAIMER</button><br/>
           <Modal open={open} onClose={this.onCloseModal} className="disclaimer-modal">
             <h2>Disclaimer</h2>
             <p>
@@ -33,9 +33,9 @@ export default class Footer extends Component {
             </p>
           </Modal>
         
-          <span>Created by JDButisbauch</span><br />
-          <span>Copyright © 2019</span><br />
-          <span>All Right Reserved</span><br />
+          
+          <span>JDButisbauch © 2019</span><br />
+          
         
       </footer>
     )

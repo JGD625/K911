@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Modal from "react-responsive-modal";
 import { Link } from 'react-router-dom'
 import RegistrationForm from '../RegistrationForm/RegistrationForm'
+import Profile from '../Profile/Profile'
 import './Nav.css';
 
 export default class Nav extends Component {
@@ -27,8 +28,7 @@ export default class Nav extends Component {
           <RegistrationForm />
           </Modal>
                 </li>
-          <li>
-            Demo
+          <li><Link to='/profile'>Demo</Link>
           </li>
         </ul>
       </nav>

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom'
 import BLUEFRENCH from '../../Images/bluefrenchsteth.png'
+import LEASH from '../../Images/leash.png'
 import './Hero.css'
 
 
@@ -18,7 +19,7 @@ export default class Hero extends Component {
               From the new house plant to the cake left out for a party, dogs can make a snack out of anything.
                 K911 will help you find out if Fido is safe, and help you find a vet when he isn't. </p>
           </div>
-        <img src={BLUEFRENCH} className="HERO-img"/>
+        <img src={LEASH} className="HERO-img"/>
         </div>
 
         

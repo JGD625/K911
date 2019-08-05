@@ -10,6 +10,9 @@ import FirstAid from './components/FirstAid/FirstAid'
 import YelpSearch from './components/Yelp/YelpSearch'
 import Profile from './components/Profile/Profile'
 import NotFoundPage from './NotFoundPage'
+import Toxins from './components/Toxins/Toxins'
+
+
 
 function App() {
   return (
@@ -24,6 +27,7 @@ function App() {
     <Route path='/firstaid' component={FirstAid} />
     <Route path='/vets' component={YelpSearch} />
     <Route path='/profile' component={Profile} />
+    <Route path='/toxins' component={Toxins} />
     <Route component={NotFoundPage} />
     </Switch>
     </main>

@@ -22,9 +22,14 @@
 .block-link {
     min-width: 200px;
     min-height: 200px;
-    border: 5px solid gray;
-    border-radius: 5px;
-    margin: 20px;
+    border: 0;
+    margin: 25px;
+}
+
+.LINK-img {
+    width: 250px;
+    height: 250px;
+    border: 0;
 }
 
 .first-aid-link-container {

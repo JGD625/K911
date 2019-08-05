@@ -19,10 +19,7 @@ export default class Plants extends Component {
             exact path='/plants'
             component={AllPlantsListPage}
           />
-          <Route
-            path='/plants/:plantId'
-            component={Plant}
-          />
+          
           
         </div>
         

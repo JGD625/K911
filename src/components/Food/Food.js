@@ -18,10 +18,6 @@ export default class Food extends Component {
             exact path='/food'
             component={AllFoodsList}
           />
-          <Route
-            path='/food/:foodId'
-            component={FoodItem}
-          />
         </div>
         
       </div>

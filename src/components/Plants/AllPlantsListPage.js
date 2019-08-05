@@ -1,42 +1,66 @@
 import React, { Component } from 'react';
-import ToxicPlantsList from './ToxicPlantsList'
-import NonToxicPlantsList from './NonToxicPlantsList'
-import ToggleDisplay from 'react-toggle-display';
-
 
 class AllPlantsListPage extends Component {
-  constructor() {
-    super();
-    this.state = { show: true };
+  constructor(props) {
+    super(props);
   }
-  handleClick() {
-    this.setState({
-      show: !this.state.show,
-    });
-  }
+   state = {
+     isLoading: true,
+     foods: [],
+     error: null
+   };
 
-  
-  
+   fetchPlants() {
+    const ReactApiKey = process.env.REACT_APP_API_KEY;
+     fetch(`https://glacial-bastion-84896.herokuapp.com/api/plants`, {
+        headers: {
+            Authorization: `Bearer ${ReactApiKey}`
+        }
+        }).then(response => response.json())
+          .then(data =>
+            this.setState({
+              plants: data,
+              isLoading: false,
+          })
+        )
+       .catch(error => this.setState({ error, isLoading: false }));
+   }
+ 
+   componentDidMount() {
+     this.fetchPlants();
+   }
+   render() {
+     const { isLoading, plants, error } = this.state;
+    
+     return (
+       <React.Fragment>
+         <h1>Plants</h1>
+         {error ? <p>{error.message}</p> : null}
+         {!isLoading ? (
+           plants.map(plant => {
+             const { plantId, name, symptom } = plant;
+             return (
+               
+               <div>
+               { plants.map(plant =>
+                 <div key={plant.id}><h2>{plant.name}</h2> 
+                 <p>{plant.toxicity}</p>
+                 <p>Toxic Principles: {plant.toxic_principles}</p>
+                 <p>Symptoms: {plant.symptom}</p>
+                 </div>
+               )}
+           
+       </div>
+             );
+           })
+         ) : (
+           <h3>Loading...</h3>
+         )}
+       </React.Fragment>
+     );
+   }
+ }
 
-  render() {
-  return (
-    <div>    
-        
-      <p>Choose a medicine from the list below.</p>
-      <ToggleDisplay show={!this.state.show}>
-      <button onClick={ () => this.handleClick() } className="togglebutton">Show All </button>
-      <ToxicPlantsList />
-      </ToggleDisplay>
-     
-      <ToggleDisplay show={this.state.show}>
-      <button onClick={ () => this.handleClick() } className="togglebutton">Show Toxic Only</button>
-      <ToxicPlantsList />
-      <NonToxicPlantsList />
-      </ToggleDisplay>
-    </div>
-  )
-  }
-}
 
 
 export default AllPlantsListPage

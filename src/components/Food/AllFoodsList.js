@@ -1,42 +1,64 @@
 import React, { Component } from 'react';
-import NonToxicFoodsList from './NonToxicFoodsList'
-import ToxicFoodsList from './ToxicFoodsList.js'
-import ToggleDisplay from 'react-toggle-display';
-
 
 class AllFoodsList extends Component {
-  constructor() {
-    super();
-    this.state = { show: true };
+  constructor(props) {
+    super(props);
   }
-  handleClick() {
-    this.setState({
-      show: !this.state.show,
-    });
-  }
+   state = {
+     isLoading: true,
+     foods: [],
+     error: null
+   };
 
-  
-  
-
-  render() {
-  return (
-    <div>    
-        
-      <p>Choose a Food from the list below.</p>
-      <ToggleDisplay show={!this.state.show}>
-      <button onClick={ () => this.handleClick() } className="togglebutton">Show All </button>
-     <ToxicFoodsList />
-      </ToggleDisplay>
-     
-      <ToggleDisplay show={this.state.show}>
-      <button onClick={ () => this.handleClick() } className="togglebutton">Show Toxic Only</button>
-      <ToxicFoodsList />
-      <NonToxicFoodsList />
-      </ToggleDisplay>
-    </div>
-  )
-  }
-}
-
+   fetchFoods() {
+    const ReactApiKey = process.env.REACT_APP_API_KEY;
+     fetch(`https://glacial-bastion-84896.herokuapp.com/api/foods`, {
+        headers: {
+          Authorization: `Bearer ${ReactApiKey}`
+        }
+        }).then(response => response.json())
+          .then(data =>
+            this.setState({
+              foods: data,
+              isLoading: false,
+          })
+        )
+       .catch(error => this.setState({ error, isLoading: false }));
+   }
+ 
+   componentDidMount() {
+     this.fetchFoods();
+   }
+   render() {
+     const { isLoading, foods, error } = this.state;
+    
+     return (
+       <React.Fragment>
+         <h1>Foods</h1>
+         {error ? <p>{error.message}</p> : null}
+         {!isLoading ? (
+           foods.map(food => {
+             const { foodId, name, symptom } = food;
+             return (
+               
+               <div>
+               { foods.map(food =>
+                 <div key={food.id}><a href={`/food/${food.id}`}>{food.name}</a> 
+                 <p>{food.toxicity}</p>
+                 <p>Toxic Principles: {food.toxic_principles}</p>
+                 <p>Symptoms: {food.symptom}</p>
+                 </div>
+               )}
+           
+       </div>
+             );
+           })
+         ) : (
+           <h3>Loading...</h3>
+         )}
+       </React.Fragment>
+     );
+   }
+ }
 
 export default AllFoodsList

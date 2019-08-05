@@ -2,17 +2,16 @@ import React, { Component } from 'react';
 import FOODS from './foodstore'
 
 
-export default function foodItem(props) {
-  const food = FOODS.find(p =>
-    p.id === props.match.params.foodId
-  )
+export default function foodItem(state) {
+
+  
   return (
-    <div className="Food-information">
-    <h2>Name: {food.name}</h2>
+    <div className="Food-information" >
+    <h2>Name: {this.state.name}</h2>
     <div>
-    <p className="REDALERT">{food.toxicity}</p>
-    <p>Toxic Principles: {food.toxic_principles}</p>
-    <p>Symptoms: {food.symptom}</p>
+    <p className="REDALERT">{this.state.toxicity}</p>
+    <p>Toxic Principles: {this.state.toxic_principles}</p>
+    <p>Symptoms: {this.state.symptom}</p>
     </div>
     </div>
    

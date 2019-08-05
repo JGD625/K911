@@ -1,0 +1,117 @@
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
+import FOODICON from '../../Images/drumstick.png'
+import MEDICON from '../../Images/medicon.png'
+import PLANTICON from '../../Images/planticon.png'
+import AllFoodsList from '../Food/AllFoodsList'
+import AllMedsList from '../Medicine/AllMedsList'
+import AllPlantsListPage from '../Plants/AllPlantsListPage'
+
+
+export default class Toxins extends Component {
+  constructor (props) {
+    super(props);
+    this.state = {
+      currentview: ''
+    };
+    this.handlePlant = this.handlePlant.bind(this);
+    this.handleFood = this.handleFood.bind(this);
+    this.handleMedicine = this.handleMedicine.bind(this);
+}
+  
+handlePlant(e) {
+  this.setState({ currentview: 'plant' });
+}
+handleFood(e) {
+  this.setState({ currentview: 'food' });
+}
+handleMedicine(e) {
+  this.setState({ currentview: 'medicine' });
+}
+
+
+  render(){
+    if(this.state.currentview === '') {
+      return (
+        <section className="block-links-container">
+            <div className="block-link" onClick={this.handleFood} >
+              <img src={FOODICON} className="LINK-img" />
+              <h2>FOOD</h2>
+              </div>
+            <div className="block-link" onClick={this.handlePlant} >
+              <img src={PLANTICON} className="LINK-img" />
+              <h2>PLANTS</h2>
+              </div>
+            <div className="block-link" onClick={this.handleMedicine} >
+              <img src={MEDICON} className="LINK-img" />
+              <h2>MEDICINE</h2>
+              </div>
+              </section>);
+    }else if(this.state.currentview === 'plant') {
+      return (
+        <div>
+        <section className="block-links-container">
+            <div className="block-link" onClick={this.handleFood} >
+              <img src={FOODICON} className="LINK-img" />
+              <h2>FOOD</h2>
+              </div>
+            <div className="block-link" onClick={this.handlePlant} >
+              <img src={PLANTICON} className="LINK-img" />
+              <h2>PLANTS</h2>
+              </div>
+            <div className="block-link" onClick={this.handleMedicine} >
+              <img src={MEDICON} className="LINK-img" />
+              <h2>MEDICINE</h2>
+              </div>
+              </section>
+              <section>
+                <AllPlantsListPage />
+              </section>
+          </div>);
+    }else if(this.state.currentview === 'medicine') {
+      return (
+        <div>
+        <section className="block-links-container">
+            <div className="block-link" onClick={this.handleFood} >
+              <img src={FOODICON} className="LINK-img" />
+              <h2>FOOD</h2>
+              </div>
+            <div className="block-link" onClick={this.handlePlant} >
+              <img src={PLANTICON} className="LINK-img" />
+              <h2>PLANTS</h2>
+              </div>
+            <div className="block-link" onClick={this.handleMedicine} >
+              <img src={MEDICON} className="LINK-img" />
+              <h2>MEDICINE</h2>
+              </div>
+              </section>
+              <section>
+                <AllMedsList />
+              </section>
+          </div>);
+    }else return(
+      <div>
+        <section className="block-links-container">
+            <div className="block-link" onClick={this.handleFood} >
+              <img src={FOODICON} className="LINK-img" />
+              <h2>FOOD</h2>
+              </div>
+            <div className="block-link" onClick={this.handlePlant} >
+              <img src={PLANTICON} className="LINK-img" />
+              <h2>PLANTS</h2>
+              </div>
+            <div className="block-link" onClick={this.handleMedicine} >
+              <img src={MEDICON} className="LINK-img" />
+              <h2>MEDICINE</h2>
+              </div>
+              </section>
+              <section>
+                <AllFoodsList />
+              </section>
+          </div>
+   
+      );
+    }
+  }
+
+

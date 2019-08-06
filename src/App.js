@@ -3,12 +3,8 @@ import { Route, Switch } from 'react-router-dom'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import Home from './components/Home/Home'
-import Food from './components/Food/Food'
-import Plants from './components/Plants/Plants'
-import Medicine from './components/Medicine/Medicine'
 import FirstAid from './components/FirstAid/FirstAid'
 import YelpSearch from './components/Yelp/YelpSearch'
-import Profile from './components/Profile/Profile'
 import NotFoundPage from './NotFoundPage'
 import Toxins from './components/Toxins/Toxins'
 
@@ -21,12 +17,8 @@ function App() {
     <main className='main'>
     <Switch>
     <Route exact path='/' component={Home} />
-    <Route path='/food' component={Food} />
-    <Route path='/plants' component={Plants} />
-    <Route path='/medicine' component={Medicine} />
     <Route path='/firstaid' component={FirstAid} />
     <Route path='/vets' component={YelpSearch} />
-    <Route path='/profile' component={Profile} />
     <Route path='/toxins' component={Toxins} />
     <Route component={NotFoundPage} />
     </Switch>

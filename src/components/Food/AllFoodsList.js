@@ -43,7 +43,7 @@ class AllFoodsList extends Component {
                
                <div>
                { foods.map(food =>
-                 <div key={food.id}><a href={`/food/${food.id}`}>{food.name}</a> 
+                 <div key={food.id}><h2>{food.name}</h2> 
                  <p>{food.toxicity}</p>
                  <p>Toxic Principles: {food.toxic_principles}</p>
                  <p>Symptoms: {food.symptom}</p>

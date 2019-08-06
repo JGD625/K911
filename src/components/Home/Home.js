@@ -28,6 +28,11 @@ export default class Header extends Component {
         <img src={BLUEFRENCH} className="LINK-img"/>
         </Link>
         </section>
+        <section>
+        <Link to='/firstaid'>
+        <h2>First Aid for your Pet</h2>
+        </Link>
+        </section>
         
 
       </content>

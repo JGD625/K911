@@ -29,7 +29,7 @@ export default class Footer extends Component {
               Just like a 4 year old child cannot take the same dosage of medicine as a 200 pound adult man, a 7 pound chihuahua and an 80 pound lab will have different reactions.
             </p>
             <p>
-              If you are unsure about your dog, please contact your local vet or, in the US, the ASPCA Pet Poison Control hot-line at (888) 426-4435.
+              If you are unsure about your dog, please contact your local vet or, in the US, the National Animal Poison Control Center 1-800-548-2423.
             </p>
           </Modal>
         

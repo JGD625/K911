@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Food.css';
 
 class AllFoodsList extends Component {
   constructor(props) {
@@ -12,6 +13,7 @@ class AllFoodsList extends Component {
 
    fetchFoods() {
     const ReactApiKey = process.env.REACT_APP_API_KEY;
+    const APIBase = process.env.API_BASE_URL;
      fetch(`https://glacial-bastion-84896.herokuapp.com/api/foods`, {
         headers: {
           Authorization: `Bearer ${ReactApiKey}`
@@ -34,23 +36,24 @@ class AllFoodsList extends Component {
     
      return (
        <React.Fragment>
-         <h1>Foods</h1>
          {error ? <p>{error.message}</p> : null}
          {!isLoading ? (
            foods.map(food => {
              const { foodId, name, symptom } = food;
              return (
                
-               <div>
-               { foods.map(food =>
-                 <div key={food.id}><h2>{food.name}</h2> 
+               <ul >
+                 <li key={food} className="food_list_item"><h3>{food.name}</h3> 
+                 
                  <p>{food.toxicity}</p>
                  <p>Toxic Principles: {food.toxic_principles}</p>
                  <p>Symptoms: {food.symptom}</p>
-                 </div>
-               )}
+                
+                 </li>
+                
+               
            
-       </div>
+       </ul>
              );
            })
          ) : (

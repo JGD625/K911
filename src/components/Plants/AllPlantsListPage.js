@@ -42,7 +42,7 @@ class AllPlantsListPage extends Component {
              return (
                
                <div>
-               { plants.map(plant =>
+               
                  <div key={plant.id}><h2>{plant.name}</h2> 
                  <p>{plant.toxicity}</p>
                  <p>Toxic Principles: {plant.toxic_principles}</p>

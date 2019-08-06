@@ -12,6 +12,7 @@ class AllMedsList extends Component {
 
    fetchMedicines() {
     const ReactApiKey = process.env.REACT_APP_API_KEY;
+    const APIBase = process.env.API_BASE_URL
      fetch(`https://glacial-bastion-84896.herokuapp.com/api/medicine`, {
         headers: {
           Authorization: `Bearer ${ReactApiKey}`
@@ -41,16 +42,15 @@ class AllMedsList extends Component {
              const { medicineId, name, } = medicine;
              return (
                
-               <div>
-               { medicines.map(medicine =>
-                 <div key={medicine.id}><h2>{medicine.name}</h2> 
-                 <p>{medicine.toxicity}</p>
-                 <p>Brand Names: {medicine.brands}</p>
-                 <p>Symptoms: {medicine.symptom}</p>
-                 </div>
-               )}
-           
-       </div>
+              <ul >
+              <li key={medicine} className="medicine_list_item"><h3>{medicine.name}</h3> 
+              
+              <p>{medicine.toxicity}</p>
+              <p>Brands: {medicine.brands}</p>
+              <p>Symptoms: {medicine.symptom}</p>
+             
+              </li>
+              </ul>
              );
            })
          ) : (

@@ -13,15 +13,15 @@ export default class Hero extends Component {
       <content className="Hero">
       
         <div className="Hero-Container">
-          <div>
+          <div className="hero-content">
             <h2>Sit. Stay. Spit that out!</h2>
-            <p>Man's best friend can get into plenty of trouble around the house.  
-              From the new house plant to the cake left out for a party, dogs can make a snack out of anything.
-                K911 will help you find out if Fido is safe, and help you find a vet when he isn't. </p>
-          </div>
+            <h3 >Man's best friend can get into plenty of trouble around the house.  
+              Plants, people food, and pills... dogs can make a snack out of anything!
+              Find out if Fido is safe, or find a vet if he isn't. 
+        </h3>
+        </div>
         <img src={LEASH} className="HERO-img"/>
         </div>
-
         
 
       </content>

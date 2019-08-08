@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
 import FOODICON from '../../Images/drumstick.png'
 import MEDICON from '../../Images/medicon.png'
 import PLANTICON from '../../Images/planticon.png'
 import AllFoodsList from '../Food/AllFoodsList'
 import AllMedsList from '../Medicine/AllMedsList'
 import AllPlantsListPage from '../Plants/AllPlantsListPage'
+import './Toxins.css'
 
 
 export default class Toxins extends Component {
@@ -33,7 +33,7 @@ handleMedicine(e) {
   render(){
     if(this.state.currentview === '') {
       return (
-        <section className="block-links-container">
+        <section className="toxinlinks-container">
             <div className="block-link" onClick={this.handleFood} >
               <img src={FOODICON} className="LINK-img" />
               <h2>FOOD</h2>
@@ -50,7 +50,7 @@ handleMedicine(e) {
     }else if(this.state.currentview === 'plant') {
       return (
         <div>
-        <section className="block-links-container">
+        <section className="toxinlinks-container">
             <div className="block-link" onClick={this.handleFood} >
               <img src={FOODICON} className="LINK-img" />
               <h2>FOOD</h2>
@@ -64,14 +64,14 @@ handleMedicine(e) {
               <h2>MEDICINE</h2>
               </div>
               </section>
-              <section>
+              <section className="results_list">
                 <AllPlantsListPage />
               </section>
           </div>);
     }else if(this.state.currentview === 'medicine') {
       return (
         <div>
-        <section className="block-links-container">
+        <section className="toxinlinks-container">
             <div className="block-link" onClick={this.handleFood} >
               <img src={FOODICON} className="LINK-img" />
               <h2>FOOD</h2>
@@ -85,13 +85,13 @@ handleMedicine(e) {
               <h2>MEDICINE</h2>
               </div>
               </section>
-              <section>
+              <section className="results_list">
                 <AllMedsList />
               </section>
           </div>);
     }else return(
       <div>
-        <section className="block-links-container">
+        <section className="toxinlinks-container">
             <div className="block-link" onClick={this.handleFood} >
               <img src={FOODICON} className="LINK-img" />
               <h2>FOOD</h2>
@@ -105,7 +105,7 @@ handleMedicine(e) {
               <h2>MEDICINE</h2>
               </div>
               </section>
-              <section>
+              <section className="results_list">
                 <AllFoodsList />
               </section>
           </div>

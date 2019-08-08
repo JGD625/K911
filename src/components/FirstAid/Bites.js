@@ -1,11 +1,14 @@
 import React, {Component} from 'react';
+import BITE from '../../Images/biteicon.png'
+import './FirstAid.css'
 
 class Bites extends Component {
     render() {
         return(
-            <div>
+            <div className="firstaid-content">
                 <h2>Bites</h2>
                 <h3>Bites from other Dogs</h3>
+                <img src={BITE} className="BITE"/>
                 <p>All bites should be evaluated by a veterinarian. Mouths are full of bacteria, and infections can be serious.
                 Some bites may have crush damage (dog jaws are pretty strong!), even if there isn't a large puncture wound.
                 </p>

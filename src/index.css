@@ -1,3 +1,12 @@
+/* COLOR SCHEME
+RED. #E40C2B
+DARK NAVY. #1D1D2C
+OFF WHITE. #F7F4E9
+TEAL.  #3CBCC3
+GOLD. #EDA63F
+GREEN.  #438945
+*/
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -10,4 +19,19 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+h2 {
+  color:#E40C2B;
+  font-size: 3rem;
+}
+
+h3 {
+  color:#3CBCC3;
+  font-size: 2rem;
+}
+
+
+ul {
+  list-style-type: none;
 }

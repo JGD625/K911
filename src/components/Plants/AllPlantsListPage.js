@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Plants.css'
 
 class AllPlantsListPage extends Component {
   constructor(props) {
@@ -34,33 +35,30 @@ class AllPlantsListPage extends Component {
     
      return (
        <React.Fragment>
-         <h1>Plants</h1>
+         <div className="plant_list_container">
          {error ? <p>{error.message}</p> : null}
          {!isLoading ? (
            plants.map(plant => {
              const { plantId, name, symptom } = plant;
              return (
+              <ul className="plant_list_item">
                
-               <div>
-               
-                 <div key={plant.id}><h2>{plant.name}</h2> 
-                 <p>{plant.toxicity}</p>
+                 <li key={plant} ><h3 className="plant_name">{plant.name}</h3> 
+
+                 <p className="toxicity">{plant.toxicity}</p>
                  <p>Toxic Principles: {plant.toxic_principles}</p>
                  <p>Symptoms: {plant.symptom}</p>
-                 </div>
-               )}
-           
-       </div>
+                 </li>
+              </ul>
              );
-           })
-         ) : (
+            })
+          ) : (
            <h3>Loading...</h3>
          )}
+         </div>
        </React.Fragment>
-     );
-   }
- }
+      );
+    }
+  }
 
-
-
-export default AllPlantsListPage
+export default AllPlantsListPage;

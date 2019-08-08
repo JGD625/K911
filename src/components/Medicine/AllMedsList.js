@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Medicine.css';
 
 class AllMedsList extends Component {
   constructor(props) {
@@ -30,22 +31,26 @@ class AllMedsList extends Component {
    componentDidMount() {
      this.fetchMedicines();
    }
+
+ 
+
    render() {
      const { isLoading, medicines, error } = this.state;
     
      return (
        <React.Fragment>
-         <h1>Medicine</h1>
+         
+         <div className="medicine_list_container">
          {error ? <p>{error.message}</p> : null}
          {!isLoading ? (
            medicines.map(medicine => {
              const { medicineId, name, } = medicine;
              return (
                
-              <ul >
-              <li key={medicine} className="medicine_list_item"><h3>{medicine.name}</h3> 
+              <ul className="medicine_list_item">
+              <li key={medicine} ><h3 className="medicine_name">{medicine.name}</h3> 
               
-              <p>{medicine.toxicity}</p>
+              <p className="toxicity">{medicine.toxicity}</p>
               <p>Brands: {medicine.brands}</p>
               <p>Symptoms: {medicine.symptom}</p>
              
@@ -56,6 +61,7 @@ class AllMedsList extends Component {
          ) : (
            <h3>Loading...</h3>
          )}
+         </div>
        </React.Fragment>
      );
    }

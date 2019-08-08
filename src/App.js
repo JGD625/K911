@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom'
 import Header from './components/Header/Header'
-import Footer from './components/Footer/Footer'
+
 import Home from './components/Home/Home'
 import FirstAid from './components/FirstAid/FirstAid'
 import YelpSearch from './components/Yelp/YelpSearch'
@@ -23,7 +23,7 @@ function App() {
     <Route component={NotFoundPage} />
     </Switch>
     </main>
-    <Footer></Footer>
+
     </div>
   );
 }

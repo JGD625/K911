@@ -1,9 +1,9 @@
 .firstaid-content {
-    color: black;
-    text-align: center;
+    color: #1D1D2C;
     margin-left: auto;
     margin-right: auto;
     margin-top: 200px;
+    max-width: 80%;
 }
 
 .choke_img {
@@ -16,4 +16,14 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-end;
+}
+
+.BITE {
+    max-width: 250px;
+    float: right;
+}
+
+.SUNICON {
+    max-width: 250px;
+    float: left;
 }

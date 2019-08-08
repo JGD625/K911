@@ -1,0 +1,17 @@
+.results_list {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.toxinlinks-container {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+

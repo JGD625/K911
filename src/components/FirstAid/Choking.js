@@ -9,7 +9,8 @@ export default class Choking extends Component {
 
   render() {
     return(
-      <content className="choking_container">
+      <content className="firstaid-content">
+      <div className="firstaid-content">
         <h2>The Heimlich Maneuver for Dogs</h2>
         <div className="choke_flex_container">
         <div>
@@ -43,7 +44,7 @@ export default class Choking extends Component {
                 <img src={HM2} className="choke_img" />
             </div>
         </div>
-        
+        </div>
       </content>
     )
   }

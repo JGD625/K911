@@ -10,8 +10,7 @@ export default class FirstAid extends Component {
   render() {
     return(
       <content className="firstaid">
-        
-          <div className="firstaid-content">FIRSTAID CONTENT</div>
+      <h2>First Aid</h2>
           <Choking />
           <Bites />
           <HeatStroke />

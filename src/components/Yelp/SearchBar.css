@@ -94,3 +94,7 @@
     margin-bottom: .86rem;
   }
 }
+
+.yelp_icon {
+  max-width: 100px;
+}

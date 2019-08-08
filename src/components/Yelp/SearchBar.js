@@ -1,4 +1,5 @@
 import React from 'react';
+import YELP from '../../Images/Yelp_trademark_RGB.png'
 import '../Yelp/SearchBar.css'
 
 
@@ -77,9 +78,9 @@ class SearchBar extends React.Component {
   render() {
     return (
       <div className="SearchBar">
-        <div className="SearchBar-sort-options">
-        </div>
+        
         <div className="SearchBar-fields">
+        
           {/* handle term or location change / add onChange attributes */}
           <input onChange={this.handleTermChange} placeholder="Veterinarian" />
           <input onChange={this.handleLocationChange} placeholder="NYC" />
@@ -87,6 +88,7 @@ class SearchBar extends React.Component {
         <div className="SearchBar-submit">
           {/* add on click attribute to get handleSearch to work */}
           <a onClick={this.handleSearch}>Let's Go</a>
+          <h3>Powered by <img src={YELP} className="yelp_icon"/></h3>
         </div>
       </div>
     )

@@ -35,30 +35,27 @@ class AllFoodsList extends Component {
      const { isLoading, foods, error } = this.state;
     
      return (
-       <React.Fragment>
+       <React.Fragment><div className="food_list_container">
          {error ? <p>{error.message}</p> : null}
          {!isLoading ? (
            foods.map(food => {
              const { foodId, name, symptom } = food;
-             return (
-               
-               <ul >
-                 <li key={food} className="food_list_item"><h3>{food.name}</h3> 
+             return ( 
+               <ul  className="food_list_item">
+                 <li key={food} ><h3 className="food_name">{food.name}</h3> 
                  
-                 <p>{food.toxicity}</p>
+                 <p className="toxicity">{food.toxicity}</p>
                  <p>Toxic Principles: {food.toxic_principles}</p>
                  <p>Symptoms: {food.symptom}</p>
                 
                  </li>
-                
-               
-           
        </ul>
              );
            })
          ) : (
            <h3>Loading...</h3>
          )}
+         </div>
        </React.Fragment>
      );
    }

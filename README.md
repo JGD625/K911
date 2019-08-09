@@ -12,7 +12,7 @@ K911: Sit. Stay. Spit that out!
  
  # Live Demo
  
- -under construction-
+<a href="https://k911.now.sh">LIVE DEMO OF K911</a>
  
  # External API's
   *Yelp Fusion

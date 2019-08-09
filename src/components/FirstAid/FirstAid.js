@@ -6,6 +6,9 @@ import './FirstAid.css';
 
 
 export default class FirstAid extends Component {
+  componentDidMount(){
+    window.scrollTo(0, 0);
+  }
 
   render() {
     return(

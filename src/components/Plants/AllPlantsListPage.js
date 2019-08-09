@@ -46,8 +46,8 @@ class AllPlantsListPage extends Component {
                  <li key={plant} ><h3 className="plant_name">{plant.name}</h3> 
 
                  <p className="toxicity">{plant.toxicity}</p>
-                 <p>Toxic Principles: {plant.toxic_principles}</p>
-                 <p>Symptoms: {plant.symptom}</p>
+                 <p><span className="teal bold">Toxic Principles: </span>{plant.toxic_principles ? <span> {plant.toxic_principles}</span> : <span>None</span>}</p>
+                 <p><span className="teal bold">Symptoms:</span> {plant.symptom ? <span> {plant.symptom}</span> : <span>Safe for snacking!</span>} </p>
                  </li>
               </ul>
              );

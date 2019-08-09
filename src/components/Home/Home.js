@@ -9,6 +9,9 @@ import './Home.css'
 
 
 export default class Header extends Component {
+  componentDidMount(){
+    window.scrollTo(0, 0);
+  }
 
   render() {
     return(

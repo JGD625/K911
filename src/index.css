@@ -31,6 +31,18 @@ h3 {
   font-size: 2rem;
 }
 
+.teal {
+  color:#3CBCC3;
+}
+
+.red {
+  color:#E40C2B;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 
 ul {
   list-style-type: none;

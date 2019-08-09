@@ -1,13 +1,19 @@
 .plants-content {
     color: black;
-    text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
 }
 
 .plant_list_item {
-    width: 300px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 16.66rem;
+  margin: 0 .5rem 2.3rem .5rem;
+  
+  padding: 10px;
 
 }
 
@@ -15,6 +21,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .plant_name {

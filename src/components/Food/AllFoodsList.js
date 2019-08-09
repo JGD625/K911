@@ -45,8 +45,8 @@ class AllFoodsList extends Component {
                  <li key={food} ><h3 className="food_name">{food.name}</h3> 
                  
                  <p className="toxicity">{food.toxicity}</p>
-                 <p>Toxic Principles: {food.toxic_principles}</p>
-                 <p>Symptoms: {food.symptom}</p>
+                 <p><span className="teal bold">Toxic Principles:</span> {food.toxic_principles ? <span> {food.toxic_principles}</span> : <span>None, but a balanced diet is important.</span>}</p>
+                 <p><span className="teal bold">Symptoms:</span> {food.symptom ? <span> {food.symptom}</span> : <span>Safe for snacking!</span>} </p>
                 
                  </li>
        </ul>

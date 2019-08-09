@@ -8,8 +8,9 @@ class AllMedsList extends Component {
    state = {
      isLoading: true,
      medicines: [],
-     error: null
+     error: null,
    };
+   
 
    fetchMedicines() {
     const ReactApiKey = process.env.REACT_APP_API_KEY;
@@ -32,6 +33,8 @@ class AllMedsList extends Component {
      this.fetchMedicines();
    }
 
+   
+
  
 
    render() {
@@ -41,19 +44,17 @@ class AllMedsList extends Component {
        <React.Fragment>
          
          <div className="medicine_list_container">
+         
          {error ? <p>{error.message}</p> : null}
          {!isLoading ? (
            medicines.map(medicine => {
              const { medicineId, name, } = medicine;
              return (
-               
               <ul className="medicine_list_item">
               <li key={medicine} ><h3 className="medicine_name">{medicine.name}</h3> 
-              
               <p className="toxicity">{medicine.toxicity}</p>
-              <p>Brands: {medicine.brands}</p>
-              <p>Symptoms: {medicine.symptom}</p>
-             
+              <p><span className="teal bold">Brands: </span> {medicine.brands}</p>
+              <p><span className="teal bold">Symptoms:</span> {medicine.symptom ? <span> {medicine.symptom}</span> : <span>It's safe, but check with your vet for dosage!</span>} </p>
               </li>
               </ul>
              );

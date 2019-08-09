@@ -60,4 +60,10 @@
         position: fixed;
         top:-12px;
     }
+
+    .modal_img {
+        float: left;
+        max-width: 100px;
+        margin-right: 10px;
+    }
   }

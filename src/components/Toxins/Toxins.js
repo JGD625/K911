@@ -18,6 +18,10 @@ export default class Toxins extends Component {
     this.handleFood = this.handleFood.bind(this);
     this.handleMedicine = this.handleMedicine.bind(this);
 }
+
+componentDidMount(){
+  window.scrollTo(0, 0);
+}
   
 handlePlant(e) {
   this.setState({ currentview: 'plant' });

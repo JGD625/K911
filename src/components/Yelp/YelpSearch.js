@@ -16,6 +16,11 @@ class YelpSearch extends Component {
       this.searchYelp = this.searchYelp.bind(this);
     }
     
+    componentDidMount(){
+      window.scrollTo(0, 0);
+    }
+
+
     // search functionality with paramaters to send to API & simulate search console.log
       searchYelp(term, location, sortBy) {
         Yelp.search(term, location, sortBy).then(businesses => {

@@ -27,6 +27,23 @@
   font-weight: 500;
 }
 
+button {
+  cursor: pointer;
+  border-radius: 4px;
+  padding: .3rem .5rem;
+  background-color: #E40C2B;
+  color: #ffffff;
+  font-size: 1rem;
+  width: 100px; 
+}
+
+button a {
+  border-radius: 4px;
+  background-color: #E40C2B;
+  color: #ffffff;
+  font-size: 1rem;
+ 
+}
 
 
 .SearchBar-submit {

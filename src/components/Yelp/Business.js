@@ -2,13 +2,16 @@ import React from 'react';
 import './Business.css'
 import PAW from '../../Images/paw.png'
 
+
 class Business extends React.Component {
+ 
   render() {
     return (
       <div className="Business">
         <div className="image-container">
+        <a href={this.props.business.url}>
           {/* accessed information via the business prop set in businesslist.js */}
-          <img src={PAW} alt='' className="pawprint"/>
+          <img src={PAW} alt='' className="pawprint"/></a>
         </div>
         <h2>{this.props.business.name}</h2>
         <div className="Business-information">
@@ -20,6 +23,7 @@ class Business extends React.Component {
           </div>
           <div className="Business-reviews">
             <h3 className="rating">{`${this.props.business.rating} stars`}</h3>
+            
           </div>
         </div>
       </div>

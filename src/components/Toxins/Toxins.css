@@ -1,7 +1,8 @@
 .results_list {
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 4.4rem 10%;
 }
 
 .toxinlinks-container {
@@ -41,6 +42,12 @@
 
   .toxin_smaller_h2 {
     font-size: 1.2rem;
+  }
+
+  .toxinlinks-container {
+    
+    margin-bottom: -50px;
+  
   }
   
 }

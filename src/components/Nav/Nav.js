@@ -16,14 +16,19 @@ export default class Nav extends Component {
   onCloseModal = () => {
     this.setState({ open: false });
   };
+
+  handleScroll(){
+    window.scrollTo(0, 0);
+  }
+
   render() {
     const { open } = this.state;
     return(
       <nav className="navigation">
         <ul className="nav-list">
-        <li><button className="nav-button"><Link to='/toxins'>Toxins</Link></button></li>
-        <li><button className="nav-button"><Link to='/vets'>Vets</Link></button></li>
-        <li><button className="nav-button"><Link to='/firstaid'>First Aid</Link></button></li>
+        <li><Link to='/toxins'><button onClick={this.handleScroll} className="nav-button">Toxins</button></Link></li>
+        <li><Link to='/vets'><button onClick={this.handleScroll} className="nav-button">Vets</button></Link></li>
+        <li><Link to='/firstaid'><button onClick={this.handleScroll} className="nav-button">First Aid</button></Link></li>
         <li><button onClick={this.onOpenModal} className="nav-button">Disclaimer</button><br/>
           <Modal open={open} onClose={this.onCloseModal} className="disclaimer-modal">
             <h2>Disclaimer</h2>

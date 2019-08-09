@@ -15,7 +15,7 @@ K911: Sit. Stay. Spit that out!
 <a href="https://k911.now.sh">LIVE DEMO OF K911</a>
  
  # Screens
- <div background="#fdfdfd">
+ 
  Desktop:
  <br />
  <img src="https://github.com/JGD625/K911/blob/master/src/Images/K911Screen1.png" width="300" />
@@ -24,7 +24,7 @@ K911: Sit. Stay. Spit that out!
  Mobile:
  <br />
  <img src="https://github.com/JGD625/K911/blob/master/src/Images/K911Screen2.png" width="300" />
- </div>
+
  # External API's
   *Yelp Fusion
 

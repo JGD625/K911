@@ -35,16 +35,16 @@ handleMedicine(e) {
       return (
         <section className="toxinlinks-container">
             <div className="block-link" onClick={this.handleFood} >
-              <img src={FOODICON} className="LINK-img" />
-              <h2>FOOD</h2>
+              <img src={FOODICON} className="toxin_link" alt='' />
+              <h2 className="toxin_smaller_h2">FOOD</h2>
               </div>
             <div className="block-link" onClick={this.handlePlant} >
-              <img src={PLANTICON} className="LINK-img" />
-              <h2>PLANTS</h2>
+              <img src={PLANTICON} className="toxin_link" alt='' />
+              <h2 className="toxin_smaller_h2">PLANTS</h2>
               </div>
             <div className="block-link" onClick={this.handleMedicine} >
-              <img src={MEDICON} className="LINK-img" />
-              <h2>MEDICINE</h2>
+              <img src={MEDICON} className="toxin_link" alt='' />
+              <h2 className="toxin_smaller_h2">MEDICINE</h2>
               </div>
               </section>);
     }else if(this.state.currentview === 'plant') {
@@ -52,16 +52,16 @@ handleMedicine(e) {
         <div>
         <section className="toxinlinks-container">
             <div className="block-link" onClick={this.handleFood} >
-              <img src={FOODICON} className="LINK-img" />
-              <h2>FOOD</h2>
+              <img src={FOODICON} className="toxin_link" alt='' />
+              <h2 className="toxin_smaller_h2">FOOD</h2>
               </div>
             <div className="block-link" onClick={this.handlePlant} >
-              <img src={PLANTICON} className="LINK-img" />
-              <h2>PLANTS</h2>
+              <img src={PLANTICON} className="toxin_link" alt='' />
+              <h2 className="toxin_smaller_h2">PLANTS</h2>
               </div>
             <div className="block-link" onClick={this.handleMedicine} >
-              <img src={MEDICON} className="LINK-img" />
-              <h2>MEDICINE</h2>
+              <img src={MEDICON} className="toxin_link" alt='' />
+              <h2 className="toxin_smaller_h2">MEDICINE</h2>
               </div>
               </section>
               <section className="results_list">
@@ -73,16 +73,16 @@ handleMedicine(e) {
         <div>
         <section className="toxinlinks-container">
             <div className="block-link" onClick={this.handleFood} >
-              <img src={FOODICON} className="LINK-img" />
-              <h2>FOOD</h2>
+              <img src={FOODICON} className="toxin_link" alt='' />
+              <h2 className="toxin_smaller_h2">FOOD</h2>
               </div>
             <div className="block-link" onClick={this.handlePlant} >
-              <img src={PLANTICON} className="LINK-img" />
-              <h2>PLANTS</h2>
+              <img src={PLANTICON} className="toxin_link" alt='' />
+              <h2 className="toxin_smaller_h2">PLANTS</h2>
               </div>
             <div className="block-link" onClick={this.handleMedicine} >
-              <img src={MEDICON} className="LINK-img" />
-              <h2>MEDICINE</h2>
+              <img src={MEDICON} className="toxin_link" alt='' />
+              <h2 className="toxin_smaller_h2">MEDICINE</h2>
               </div>
               </section>
               <section className="results_list">
@@ -93,16 +93,16 @@ handleMedicine(e) {
       <div>
         <section className="toxinlinks-container">
             <div className="block-link" onClick={this.handleFood} >
-              <img src={FOODICON} className="LINK-img" />
-              <h2>FOOD</h2>
+              <img src={FOODICON} className="toxin_link" alt='' />
+              <h2 className="toxin_smaller_h2">FOOD</h2>
               </div>
             <div className="block-link" onClick={this.handlePlant} >
-              <img src={PLANTICON} className="LINK-img" />
-              <h2>PLANTS</h2>
+              <img src={PLANTICON} className="toxin_link" alt='' />
+              <h2 className="toxin_smaller_h2">PLANTS</h2>
               </div>
             <div className="block-link" onClick={this.handleMedicine} >
-              <img src={MEDICON} className="LINK-img" />
-              <h2>MEDICINE</h2>
+              <img src={MEDICON} className="toxin_link" alt='' />
+              <h2 className="toxin_smaller_h2">MEDICINE</h2>
               </div>
               </section>
               <section className="results_list">

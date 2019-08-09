@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Business.css'
+import PAW from '../../Images/paw.png'
 
 class Business extends React.Component {
   render() {
@@ -7,7 +8,7 @@ class Business extends React.Component {
       <div className="Business">
         <div className="image-container">
           {/* accessed information via the business prop set in businesslist.js */}
-          <img src={this.props.business.imageSrc} alt=''/>
+          <img src={PAW} alt='' className="pawprint"/>
         </div>
         <h2>{this.props.business.name}</h2>
         <div className="Business-information">

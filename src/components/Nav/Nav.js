@@ -27,7 +27,7 @@ export default class Nav extends Component {
         <li><button onClick={this.onOpenModal} className="nav-button">Disclaimer</button><br/>
           <Modal open={open} onClose={this.onCloseModal} className="disclaimer-modal">
             <h2>Disclaimer</h2>
-            <img src={FAVICON} className="modal_img"/>
+            <img src={FAVICON} className="modal_img" alt='favicon'/>
             <p>
               Keep in mind that every dog is different. Size, age, and health affect what an individual dog can and cannot handle.
             </p>

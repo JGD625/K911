@@ -11,7 +11,7 @@ export default class FirstAidHero extends Component {
                <Link to='/vets'>
                 <h2>Find a Vet for your Pet</h2>
                 <h3 className="left">K911 can help you find a local vet, where ever you may be!</h3>
-                 <img src={BLUEFRENCH} className="vet-img right"/>
+                 <img src={BLUEFRENCH} className="vet-img right" alt=''/>
                 </Link>
               </div>
       

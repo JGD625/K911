@@ -63,3 +63,20 @@
     text-decoration: none;
     color:#E40C2B;
   }
+
+  @media only screen and (max-width: 400px) {
+    .title {
+      font-size: 3.5rem;
+      position: relative;
+      left: -40px;
+      top: -5px;
+      z-index: 7;
+  }
+  .header-logo {
+    height: 120px;
+    position: relative;
+    left: -50px; 
+    z-index: 5;
+    
+}
+  }

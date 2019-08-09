@@ -8,6 +8,8 @@ const sortByOptions = {
 };
 
 
+
+
 class SearchBar extends React.Component {
 //add search bar constructor and set state and add three keys
   constructor(props){
@@ -15,7 +17,10 @@ class SearchBar extends React.Component {
     this.state = {
       term: 'veterinarian',
       location: 'NYC',
-      sortBy: 'best_match'
+      sortBy: 'best_match',
+      errors: []
+     
+      
     };
     //these methods use this, so must bind
     this.handleTermChange = this.handleTermChange.bind(this);
@@ -62,6 +67,7 @@ class SearchBar extends React.Component {
     this.setState({
       location: event.target.value
     });
+    
   }
 
   //functionality for simulate search when you click button
@@ -72,23 +78,41 @@ class SearchBar extends React.Component {
       this.state.sortBy
     );
     event.preventDefault();
+
+  }
+  
+validate(location) {
+    // we are going to store errors for all fields
+    // in a signle array
+    const errors = [];
+  
+    if (this.state.location.length === 0) {
+      errors.push("We need to know where you are!");
+    }
+    
   }
 
-
+  
   render() {
+    const { location } = this.state;
+    const isEnabled = location.length > 0 && location.match(/^([a-zA-Z0-9]+)$/);
     return (
+     
       <div className="SearchBar">
-        
         <div className="SearchBar-fields">
         
           {/* handle term or location change / add onChange attributes */}
-          <input onChange={this.handleTermChange} placeholder="Veterinarian" />
-          <input onChange={this.handleLocationChange} placeholder="NYC" />
-        </div>
-        <div className="SearchBar-submit">
+         <span><h3>Where are you?</h3> </span> 
+         <input type="text" onChange={this.handleLocationChange} value={this.state.location} placeholder="City, State, or Zip Code" required/>
+         
+         <div className="SearchBar-submit">
+         
           {/* add on click attribute to get handleSearch to work */}
-          <a onClick={this.handleSearch}>Let's Go</a>
-          <h3>Powered by <img src={YELP} className="yelp_icon"/></h3>
+          <button onClick={this.handleSearch} disabled={!isEnabled} >Search</button>
+        </div>
+        </div>
+        <div className="SearchBar-logos">
+        <h3>Powered by </h3><img src={YELP} className="yelp_icon"/>
         </div>
       </div>
     )

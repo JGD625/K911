@@ -10,7 +10,7 @@ class HeatStroke extends Component {
                 <p>Signs of heat stroke or heat exhaustion include collapse; body temperature of 104 degrees F or above; bloody diarrhea or vomiting; wobbliness; excessive panting or difficulty breathing; increase heart rate; and increased salivation.
                 </p>
                 <h3>Seek Veterinary Care Immediately!</h3>
-                <img src={SUNICON} className="SUNICON" />
+                <img src={SUNICON} className="SUNICON" alt='sunicon'/>
                 <ul>
                 <li>Use cool water but not ice water to cool your pet keeping the temperature no lower than 103 degrees to avoid hypothermia (too cold), which can cause the blood vessels to constrict.</li>
                 <li>Offer ice cubes to lick until you can see a vet.</li>

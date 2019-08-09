@@ -12,7 +12,7 @@ export default class FirstAidHero extends Component {
               <div className="Hero-Container">
                 <Link to='/firstaid'>
                 <h2>First Aid</h2>
-                <img src={FIRSTAIDICON} className="firstaid-img left"/>
+                <img src={FIRSTAIDICON} className="firstaid-img left" alt='firstaidicon'/>
                 <br />
                 <h3 className="right">Tips to help out your pooch in a pinch.</h3>
                 </Link>

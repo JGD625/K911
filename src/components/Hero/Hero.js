@@ -1,6 +1,4 @@
 import React, {Component} from 'react';
-import { Link } from 'react-router-dom'
-import BLUEFRENCH from '../../Images/bluefrenchsteth.png'
 import LEASH from '../../Images/leash.png'
 import './Hero.css'
 
@@ -20,7 +18,7 @@ export default class Hero extends Component {
               Find out if Fido is safe, or find a vet if he isn't. 
         </h3>
         </div>
-        <img src={LEASH} className="HERO-img"/>
+        <img src={LEASH} className="HERO-img" alt=''/>
         </div>
         
 

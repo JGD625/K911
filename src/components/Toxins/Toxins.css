@@ -11,7 +11,36 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-top: 100px;
+  margin-top: 150px;
   margin-bottom: 100px;
+  cursor: pointer;
 }
 
+.toxin_link {
+  max-width: 250px;
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .toxin_link {
+    max-width: 150px;
+  }
+
+  .toxin_smaller_h2 {
+    font-size: 1.4rem;
+  }
+  
+}
+
+@media only screen and (max-width: 600px) {
+  .toxin_link {
+    max-width: 75px;
+  
+  }
+
+  .toxin_smaller_h2 {
+    font-size: 1.2rem;
+  }
+  
+}

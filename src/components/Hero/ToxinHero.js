@@ -13,8 +13,11 @@ export default class ToxinHero extends Component {
       
       <div className="Hero-Container">
       <Link to='/toxins'>
-      <h2>Toxins</h2>
+      <h2>Toxins</h2></Link>
+      <Link to='/toxins'>
       <h3 className="right">Check common foods, plants, and medications to see if theyre safe for fido.</h3>
+      </Link>
+      <Link to='/toxins'>
       <img src={TOXINICON} className="TOXINIMG left" alt=''/>
       </Link>
     </div>

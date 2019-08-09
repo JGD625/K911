@@ -37,11 +37,12 @@ export default class Nav extends Component {
               Keep in mind that every dog is different. Size, age, and health affect what an individual dog can and cannot handle.
             </p>
             <p>
-              Just like a 4 year old child cannot take the same dosage of medicine as a 200 pound adult man, a 7 pound chihuahua and an 80 pound lab will have different reactions.
+              Just like a 4 year old child cannot take the same dosage of medicine as a 200 pound adult man, a 7 pound chihuahua and an 80 pound lab will have different reactions.  K911 is meant for informational purposes, but cannot diagnose or treat your pet.
             </p>
             <p>
-              If you are unsure about your dog, please contact your local vet or, in the US, the National Animal Poison Control Center 1-800-548-2423.
+              If you are unsure about your dog, or if there is a medical emergency, please contact a veterinarian or the National Animal Poison Control Center <span className="red">1-800-548-2423</span>.
             </p>
+            <p><Link to='/legal' onClick={this.onCloseModal}>Full Legal Release</Link></p>
           </Modal>
           </li>
         </ul>

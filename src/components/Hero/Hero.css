@@ -62,7 +62,7 @@
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     .block-links-container{
       display: flex;
       flex-direction: column;
@@ -73,29 +73,22 @@
 
 .HERO-img {
     max-height: 150px;
-    position: relative;
-    right: -5%;
-    top: -20px;
+  
 }
 
 .TOXINIMG {
-    max-height: 180px;
-    position: relative;
-    left: 90px;
-    top: 5px;
+    max-height: 150px;
+    position: static;
 }
 
 .vet-img {
         max-height: 180px;
-        position: relative;
-        right: 120px;
-        top: 30px;
+        position: static;
     }
 
 .firstaid-img {
        max-height: 150px;
-       position: relative;
-       left: 120px;
+       position: static;
        
     }
 
@@ -104,6 +97,10 @@
         margin-bottom: 150px;
         max-width: 80%;
         max-height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .Hero-Container h3{
        font-size: 1.5rem;

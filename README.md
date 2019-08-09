@@ -22,9 +22,9 @@ K911: Sit. Stay. Spit that out!
  <br />
  Mobile:
  <br />
- ![Screen2](https://github.com/JGD625/K911/blob/master/src/Images/K911Screen2.png)
+ <img src="https://github.com/JGD625/K911/blob/master/src/Images/K911Screen2.png" width="400" />
  
  # External API's
   *Yelp Fusion
 
-<img src="https://github.com/JGD625/K911/blob/master/src/Images/BlueDog.png" width="100" />
+<img src="https://github.com/JGD625/K911/blob/master/src/Images/BlueDog.png" width="150" />

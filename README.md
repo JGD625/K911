@@ -4,15 +4,19 @@ K911: Sit. Stay. Spit that out!
 #JDBUTISBAUCH FULL STACK APP#
 
 # Summary:
-  A Health And Wellness App for your canine companion.  Search medications, plants, and foods for toxicity, uses, and precautions.  Find a vet near your current location. Keep up with your pup's personal health with a logged in account.
+  A Health And Wellness App for your canine companion.  Search medications, plants, and foods for toxicity, uses, and precautions.  Find a vet near your current location. 
   
 # Technologies
 
- REACT
+ REACT, HTML5, CSS3, Node, Postgres
  
  # Live Demo
  
 <a href="https://k911.now.sh">LIVE DEMO OF K911</a>
+ 
+ # Screens
+ ![Screen1](https://github.com/JGD625/K911/blob/master/src/Images/K911Screen1.png)
+ ![Screen2](https://github.com/JGD625/K911/blob/master/src/Images/K911Screen2.png)
  
  # External API's
   *Yelp Fusion
